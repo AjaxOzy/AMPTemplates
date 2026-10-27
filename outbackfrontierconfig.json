@@ -1,0 +1,122 @@
+[
+    {
+        "DisplayName": "World Name",
+        "Description": "The world to load or create: its folder under data/worlds. Give each AMP instance its own.",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "world,name,save",
+        "FieldName": "WorldName",
+        "InputType": "text",
+        "ParamFieldName": "world",
+        "DefaultValue": "main",
+        "IncludeInCommandLine": true,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "World Seed",
+        "Description": "Seed for a new world. Leave empty for a random one; ignored once the world exists.",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "seed,world,terrain",
+        "FieldName": "WorldSeed",
+        "InputType": "text",
+        "ParamFieldName": "seed",
+        "DefaultValue": "",
+        "IncludeInCommandLine": true,
+        "EnumValues": {},
+        "SkipIfEmpty": true,
+        "Placeholder": "random"
+    },
+    {
+        "DisplayName": "Max Players",
+        "Description": "Most players connected at once.",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "max,players,slots",
+        "FieldName": "$MaxUsers",
+        "InputType": "number",
+        "ParamFieldName": "max-players",
+        "DefaultValue": "10",
+        "IncludeInCommandLine": false,
+        "EnumValues": {},
+        "minValue": "1",
+        "maxValue": "64"
+    },
+    {
+        "DisplayName": "Suspicion Flag Threshold",
+        "Description": "Suspicion score at which a player is flagged for an admin to look at.",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "cheat,suspicion,flag",
+        "FieldName": "FlagThreshold",
+        "InputType": "number",
+        "ParamFieldName": "security.flagThreshold",
+        "DefaultValue": "10",
+        "IncludeInCommandLine": false,
+        "EnumValues": {},
+        "minValue": "1",
+        "maxValue": "1000"
+    },
+    {
+        "DisplayName": "Admin Dashboard",
+        "Description": "Run the admin web dashboard (it also needs a password hash below).",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "dashboard,admin,web",
+        "FieldName": "Dashboard",
+        "InputType": "enum",
+        "ParamFieldName": "dashboard",
+        "DefaultValue": "on",
+        "IncludeInCommandLine": true,
+        "EnumValues": {
+            "on": "On",
+            "off": "Off"
+        }
+    },
+    {
+        "DisplayName": "Dashboard Password Hash",
+        "Description": "Make one on any PC with: OutbackFrontier.Server --hash-password. Empty keeps the dashboard off.",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "dashboard,password,hash",
+        "FieldName": "DashboardPasswordHash",
+        "InputType": "password",
+        "ParamFieldName": "dashboard.passwordHash",
+        "DefaultValue": "",
+        "IncludeInCommandLine": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Dashboard LAN Only",
+        "Description": "Refuse dashboard requests from outside private networks. Keep this on.",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "dashboard,lan,security",
+        "FieldName": "DashboardLanOnly",
+        "InputType": "checkbox",
+        "ParamFieldName": "dashboard.lanOnly",
+        "DefaultValue": "true",
+        "IncludeInCommandLine": false,
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Server Download URL",
+        "Description": "Where server builds are published (the download host), without a trailing slash.",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "update,download,url",
+        "FieldName": "DownloadBaseURL",
+        "InputType": "text",
+        "ParamFieldName": "DownloadBaseURL",
+        "DefaultValue": "https://downloads.outback.invalid",
+        "IncludeInCommandLine": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Server Version",
+        "Description": "The server build to install on Update, e.g. 0.1.0-pt1. It must match the playtest client.",
+        "Category": "Outback Frontier:landscape",
+        "Keywords": "update,version,build",
+        "FieldName": "ServerVersion",
+        "InputType": "text",
+        "ParamFieldName": "ServerVersion",
+        "DefaultValue": "0.1.0-pt1",
+        "IncludeInCommandLine": false,
+        "EnumValues": {}
+    }
+]

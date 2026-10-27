@@ -1,0 +1,16 @@
+[
+    {
+        "Protocol": "UDP",
+        "Port": "7777",
+        "Name": "Game Port",
+        "Description": "Players connect here (UDP). Open it to the internet for playtests.",
+        "Ref": "GamePort"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": "8080",
+        "Name": "Admin Dashboard Port",
+        "Description": "Admin web dashboard. Keep it on the LAN; don't forward it.",
+        "Ref": "DashboardPort"
+    }
+]
