@@ -8,7 +8,7 @@
     },
     {
         "Protocol": "TCP",
-        "Port": "8080",
+        "Port": "7790",
         "Name": "Admin Dashboard Port",
         "Description": "Admin web dashboard. Keep it on the LAN; don't forward it.",
         "Ref": "DashboardPort"
