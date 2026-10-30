@@ -1,7 +1,7 @@
 Meta.DisplayName=Outback Frontier
 Meta.Description=Outback Frontier dedicated server (playtest builds)
 Meta.OS=Linux
-Meta.AarchSupport=Unsupported
+Meta.AarchSupport=NotSupported
 Meta.Arch=x86_64
 Meta.Author=Outback Frontier project
 Meta.URL=

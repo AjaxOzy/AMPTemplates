@@ -8,13 +8,13 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
-        "OneShot": false
+        "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Make Executable",
+        "UpdateStageName": "Set Executable Flag",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SetExecutableFlag",
-        "UpdateSourceData": "{{$FullBaseDir}}OutbackFrontier.Server",
-        "OneShot": false
+        "UpdateSourceArgs": "{{$FullBaseDir}}OutbackFrontier.Server",
+        "SkipOnFailure": false
     }
 ]
