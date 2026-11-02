@@ -9,7 +9,7 @@
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "world",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "main",
         "EnumValues": {}
     },
@@ -23,10 +23,9 @@
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "seed",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "",
         "EnumValues": {},
-        "SkipIfEmpty": true,
         "Placeholder": "random"
     },
     {
@@ -55,7 +54,7 @@
         "InputType": "number",
         "IsFlagArgument": false,
         "ParamFieldName": "flag-threshold",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "10",
         "EnumValues": {},
         "MinValue": "1",
@@ -71,7 +70,7 @@
         "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "dashboard",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "on",
         "EnumValues": {
             "on": "On",
@@ -88,10 +87,9 @@
         "InputType": "Password",
         "IsFlagArgument": false,
         "ParamFieldName": "dashboard-password-hash",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "",
-        "EnumValues": {},
-        "SkipIfEmpty": true
+        "EnumValues": {}
     },
     {
         "DisplayName": "Dashboard LAN Only",
@@ -103,7 +101,7 @@
         "InputType": "checkbox",
         "IsFlagArgument": false,
         "ParamFieldName": "dashboard-lan-only",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "true",
         "EnumValues": {
             "False": "false",
@@ -114,7 +112,7 @@
         "DisplayName": "Server Source",
         "Category": "Outback Frontier:landscape",
         "Subcategory": "Updates:system_update:3",
-        "Description": "Where Update gets the server build: downloaded from the Server Download URL, or a zip you uploaded with the File Manager into the server folder (named OutbackFrontier-Server-<version>-linux-x64.zip).",
+        "Description": "Where Update gets the server build: downloaded from the Server Download URL, or a zip you uploaded with the File Manager to the instance's top folder (where the File Manager opens), named OutbackFrontier-Server-<Server Version>-linux-x64.zip.",
         "Keywords": "update,download,upload,zip,source",
         "FieldName": "ServerSource",
         "InputType": "enum",
@@ -124,7 +122,7 @@
         "DefaultValue": "download",
         "EnumValues": {
             "download": "Download from the Server Download URL",
-            "upload": "A zip uploaded to the server folder"
+            "upload": "A zip uploaded to the instance folder"
         }
     },
     {
@@ -146,14 +144,14 @@
         "DisplayName": "Server Version",
         "Category": "Outback Frontier:landscape",
         "Subcategory": "Updates:system_update:3",
-        "Description": "The server build to install on Update, e.g. 0.1.0-pt1. It must match the playtest client.",
+        "Description": "The server build to install on Update, e.g. 0.1.0-ci3. It must match the playtest client.",
         "Keywords": "update,version,build",
         "FieldName": "ServerVersion",
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "ServerVersion",
         "IncludeInCommandLine": false,
-        "DefaultValue": "0.1.0-pt1",
+        "DefaultValue": "0.1.0-ci3",
         "EnumValues": {}
     }
 ]

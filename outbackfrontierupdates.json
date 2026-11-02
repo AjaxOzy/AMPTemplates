@@ -13,10 +13,10 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Server Unpack (uploaded zip)",
+        "UpdateStageName": "Server Unpack (zip uploaded to the instance folder)",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "ExtractArchive",
-        "UpdateSourceData": "{{$FullBaseDir}}OutbackFrontier-Server-{{ServerVersion}}-linux-x64.zip",
+        "UpdateSourceData": "OutbackFrontier-Server-{{ServerVersion}}-linux-x64.zip",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": false,
