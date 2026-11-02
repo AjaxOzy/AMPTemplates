@@ -111,18 +111,36 @@
         }
     },
     {
+        "DisplayName": "Server Source",
+        "Category": "Outback Frontier:landscape",
+        "Subcategory": "Updates:system_update:3",
+        "Description": "Where Update gets the server build: downloaded from the Server Download URL, or a zip you uploaded with the File Manager into the server folder (named OutbackFrontier-Server-<version>-linux-x64.zip).",
+        "Keywords": "update,download,upload,zip,source",
+        "FieldName": "ServerSource",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "ServerSource",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "download",
+        "EnumValues": {
+            "download": "Download from the Server Download URL",
+            "upload": "A zip uploaded to the server folder"
+        }
+    },
+    {
         "DisplayName": "Server Download URL",
         "Category": "Outback Frontier:landscape",
         "Subcategory": "Updates:system_update:3",
-        "Description": "Where server builds are published (the download host), without a trailing slash.",
+        "Description": "With Server Source set to download: the web folder holding the server zips, without a trailing slash. It must be reachable from the AMP host without a login (the Forgejo release isn't: the repository is private).",
         "Keywords": "update,download,url",
         "FieldName": "DownloadBaseURL",
         "InputType": "url",
         "IsFlagArgument": false,
         "ParamFieldName": "DownloadBaseURL",
         "IncludeInCommandLine": false,
-        "DefaultValue": "https://downloads.outback.invalid",
-        "EnumValues": {}
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Placeholder": "https://downloads.example.com"
     },
     {
         "DisplayName": "Server Version",

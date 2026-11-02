@@ -8,6 +8,20 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
+        "UpdateSourceConditionSetting": "ServerSource",
+        "UpdateSourceConditionValue": "download",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Server Unpack (uploaded zip)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceData": "{{$FullBaseDir}}OutbackFrontier-Server-{{ServerVersion}}-linux-x64.zip",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": false,
+        "UpdateSourceConditionSetting": "ServerSource",
+        "UpdateSourceConditionValue": "upload",
         "SkipOnFailure": false
     },
     {
